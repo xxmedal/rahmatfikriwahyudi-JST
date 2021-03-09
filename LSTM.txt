@@ -1,0 +1,12 @@
+> define the get_many method with self class instance, keys and version set to None as
+arguments.
+< def get_many(self, keys, version=None):
+> if e.ermo equals to ermo.EEXIST,
+< if e.ermo == errno.EEXIST :
+> increment weight by integer 2.
+< weight += 2
+> call the method router.db_for_write with argument selfcache_model_class, substitute
+the result for db.
+< db = router.db_forwrite(selfcache_model_class)
+> do notliing
+< pass
