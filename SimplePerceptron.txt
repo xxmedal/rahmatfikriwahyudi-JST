@@ -1,0 +1,69 @@
+import java.util.Random;
+
+public class Perceptron {
+
+   public static void main(String[] args) {
+
+       //Valores Entradas
+
+       double x1 = 1.4;
+
+       double x2 = -0.33;
+
+ 
+
+       //Valores Pesos (aleatorios)
+
+       double w1 = new Random().nextDouble();
+
+       double w2 = new Random().nextDouble();
+
+ 
+
+       Neurona n = new Neurona(x1, x2, w1, w2);
+
+ 
+
+       System.out.println("Entrada 1 (x1): " + x1);
+
+       System.out.println("Entrada 2 (x2): " + x2);
+
+       System.out.println("Salida 1 (y1) = " + n.getY1());
+
+  }
+
+}
+
+ 
+
+Neurona.java
+
+public class Neurona {
+
+   final double x1, x2, w1, w2;
+
+   Neurona(double x1, double x2, double w1, double w2) {
+
+       this.x1 = x1;
+
+       this.x2 = x2;
+
+       this.w1 = w1;
+
+       this.w2 = w2;
+
+   }
+
+   public double getY1() {
+
+       double wx, y1;
+
+       wx = (x1 * w1) + (x2 * w2); //Función propagación
+
+       y1 = Math.tanh(wx); //Salida
+
+       return y1;
+
+   }
+
+}
