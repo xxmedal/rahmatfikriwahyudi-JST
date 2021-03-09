@@ -1,4 +1,5 @@
 source code LSTM
+
 > define the get_many method with self class instance, keys and version set to None as
 arguments.
 < def get_many(self, keys, version=None):
@@ -11,3 +12,9 @@ the result for db.
 < db = router.db_forwrite(selfcache_model_class)
 > do notliing
 < pass
+
+error generate
+> if self has an attribute 'error_dia,
+< if hasattr(self, MI) :
+> if self. dir path doesn't exists,
+< if not os.path.exists (self.TE) :
