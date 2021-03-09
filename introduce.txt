@@ -3,4 +3,6 @@ Npm : G1A018054
 Informatika 2018
 universitas bengkulu
 belajar JST
-belajar git
+
+belajar git dan github
+
