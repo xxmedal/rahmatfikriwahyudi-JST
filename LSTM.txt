@@ -1,3 +1,4 @@
+source code LSTM
 > define the get_many method with self class instance, keys and version set to None as
 arguments.
 < def get_many(self, keys, version=None):
